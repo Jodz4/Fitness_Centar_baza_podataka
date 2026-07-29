@@ -1,0 +1,322 @@
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(1, 'Petar', 'Petrovic', DATE '1990-05-14', 'M', '0641234567', 'petar.petrovic@email.com', 'Kneza Milosa 12', 'Beograd', '11000', DATE '2023-01-10', 'aktivan');
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(2, 'Ana', 'Anic', DATE '1998-03-22', 'Z', '0651234567', 'ana.anic@email.com', 'Bulevar oslobodjenja 5', 'Novi Sad', '21000', DATE '2022-06-01', 'aktivan');
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(3, 'Marko', 'Markovic', DATE '1985-11-02', 'M', '0631234567', 'marko.markovic@email.com', 'Cara Dusana 3', 'Nis', '18000', DATE '2023-09-15', 'aktivan');
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(4, 'Jovana', 'Jovanovic', DATE '2001-07-09', 'Z', '0661234567', 'jovana.jovanovic@email.com', 'Balkanska 8', 'Beograd', '11000', DATE '2024-02-20', 'aktivan');
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(5, 'Nikola', 'Nikolic', DATE '2010-01-15', 'M', NULL, NULL, 'Vojvode Stepe 20', 'Beograd', '11000', DATE '2024-05-01', 'aktivan');
+INSERT INTO KORISNIK (korisnik_id, ime, prezime, datum_rodjenja, pol, telefon, email, ulica, grad, postanski_broj, datum_uclanjenja, status_clanstva) VALUES
+(6, 'Milica', 'Milic', DATE '1995-08-30', 'Z', '0671234567', 'milica.milic@email.com', 'Kralja Petra 1', 'Kragujevac', '34000', DATE '2023-03-11', 'neaktivan');
+
+INSERT INTO REKREATIVAC (korisnik_id) VALUES (1);
+INSERT INTO REKREATIVAC (korisnik_id) VALUES (4);
+INSERT INTO REKREATIVAC (korisnik_id) VALUES (5);
+INSERT INTO REKREATIVAC (korisnik_id) VALUES (6);
+
+INSERT INTO PROFESIONALNI_SPORTISTA (korisnik_id, sport, klub, nivo_takmicenja) VALUES
+(2, 'Kosarka', 'KK Partizan', 'Prva liga');
+INSERT INTO PROFESIONALNI_SPORTISTA (korisnik_id, sport, klub, nivo_takmicenja) VALUES
+(4, 'Plivanje', 'Vaterpolo klub Beograd', 'Amaterski');
+
+INSERT INTO REHABILITACIONI_KORISNIK (korisnik_id, preporuka_lekara, ogranicenja, tip_rehabilitacije) VALUES
+(3, 'Fizikalna terapija nakon operacije kolena', 'Ogranicenje opterecenja leve noge', 'Postoperativna rehabilitacija');
+
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (1, 'mrsavljenje');
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (2, 'povecanje snage');
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (3, 'oporavak');
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (4, 'kondicija');
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (5, 'kondicija');
+INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (6, 'mrsavljenje');
+
+INSERT INTO KORISNIK_ALERGIJE (korisnik_id, alergija) VALUES (3, 'polen');
+INSERT INTO KORISNIK_ALERGIJE (korisnik_id, alergija) VALUES (5, 'kikiriki');
+
+INSERT INTO KORISNIK_ZDRAVSTVENA_OGRANICENJA (korisnik_id, ogranicenje) VALUES (3, 'povreda kolena');
+
+INSERT INTO STARATELJ (staratelj_id, korisnik_id, ime, prezime, kontakt_telefon, email) VALUES
+(1, 5, 'Dragan', 'Nikolic', '0691234567', 'dragan.nikolic@email.com');
+
+
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(1, 'Stefan', 'Stefanovic', '0601111111', 'stefan.s@fitcentar.rs', DATE '2020-01-15', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(2, 'Ivana', 'Ivanovic', '0602222222', 'ivana.i@fitcentar.rs', DATE '2021-03-01', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(3, 'Dragana', 'Draganic', '0603333333', 'dragana.d@fitcentar.rs', DATE '2019-09-10', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(4, 'Milos', 'Milosevic', '0604444444', 'milos.m@fitcentar.rs', DATE '2022-05-20', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(5, 'Jelena', 'Jelic', '0605555555', 'jelena.j@fitcentar.rs', DATE '2018-11-01', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(6, 'Uros', 'Urosevic', '0606666666', 'uros.u@fitcentar.rs', DATE '2023-02-14', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(7, 'Snezana', 'Snezanic', '0607777777', 'snezana.s@fitcentar.rs', DATE '2017-06-30', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(8, 'Aleksandar', 'Aleksandric', '0608888888', 'aleksandar.a@fitcentar.rs', DATE '2022-08-01', 'aktivan');
+INSERT INTO OSOBLJE (osoblje_id, ime, prezime, telefon, email, datum_zaposlenja, status) VALUES
+(9, 'Marija', 'Maric', '0609999999', 'marija.m@fitcentar.rs', DATE '2021-10-05', 'aktivan');
+
+-- Stefan (1) je i trener i nutricionista - primer visestruke uloge
+INSERT INTO TRENER (osoblje_id, nivo_iskustva) VALUES (1, 'napredni');
+INSERT INTO TRENER (osoblje_id, nivo_iskustva) VALUES (2, 'srednji');
+INSERT INTO TRENER (osoblje_id, nivo_iskustva) VALUES (4, 'napredni');
+INSERT INTO TRENER (osoblje_id, nivo_iskustva) VALUES (8, 'pocetnik');
+INSERT INTO TRENER (osoblje_id, nivo_iskustva) VALUES (9, 'srednji');
+
+INSERT INTO TRENER_LICENCE (osoblje_id, licenca) VALUES (1, 'Licenca fitnes trenera A');
+INSERT INTO TRENER_LICENCE (osoblje_id, licenca) VALUES (2, 'Licenca grupnih treninga');
+
+INSERT INTO TRENER_SPECIJALIZACIJE (osoblje_id, specijalizacija) VALUES (1, 'Trening snage');
+INSERT INTO TRENER_SPECIJALIZACIJE (osoblje_id, specijalizacija) VALUES (2, 'Grupni fitnes');
+INSERT INTO TRENER_SPECIJALIZACIJE (osoblje_id, specijalizacija) VALUES (9, 'Plivanje');
+
+INSERT INTO TRENER_SERTIFIKATI (osoblje_id, sertifikat) VALUES (1, 'ACE sertifikat');
+INSERT INTO TRENER_SERTIFIKATI (osoblje_id, sertifikat) VALUES (9, 'Sertifikat instruktora plivanja');
+
+INSERT INTO NUTRICIONISTA (osoblje_id) VALUES (1);
+INSERT INTO NUTRICIONISTA (osoblje_id) VALUES (3);
+
+INSERT INTO NUTRICIONISTA_OBLASTI (osoblje_id, oblast) VALUES (1, 'Sportska ishrana');
+INSERT INTO NUTRICIONISTA_OBLASTI (osoblje_id, oblast) VALUES (3, 'Ishrana za mrsavljenje');
+
+INSERT INTO FIZIOTERAPEUT (osoblje_id, licenca_datum, licenca_institucija) VALUES
+(4, DATE '2022-05-20', 'Medicinski fakultet Beograd');
+INSERT INTO FIZIOTERAPEUT_TERMINI (osoblje_id, termin) VALUES (4, 'ponedeljak 10-12');
+INSERT INTO FIZIOTERAPEUT_OBLASTI (osoblje_id, oblast) VALUES (4, 'Rehabilitacija kolena');
+
+INSERT INTO LEKAR (osoblje_id, licenca_datum, licenca_institucija) VALUES
+(5, DATE '2018-11-01', 'Medicinski fakultet Nis');
+INSERT INTO LEKAR_TERMINI (osoblje_id, termin) VALUES (5, 'sreda 09-11');
+INSERT INTO LEKAR_OBLASTI (osoblje_id, oblast) VALUES (5, 'Sportska medicina');
+
+INSERT INTO RECEPCIONER (osoblje_id) VALUES (6);
+INSERT INTO ADMINISTRATOR (osoblje_id) VALUES (7);
+
+INSERT INTO PERSONALNI_TRENER (osoblje_id) VALUES (1);
+INSERT INTO GRUPNI_TRENER (osoblje_id) VALUES (2);
+INSERT INTO GRUPNI_TRENER (osoblje_id) VALUES (8);
+INSERT INTO INSTRUKTOR_PLIVANJA (osoblje_id) VALUES (9);
+INSERT INTO YOGA_INSTRUKTOR (osoblje_id) VALUES (2);
+INSERT INTO ONLINE_TRENER (osoblje_id) VALUES (2);
+INSERT INTO ONLINE_TRENER (osoblje_id) VALUES (8);
+
+
+INSERT INTO PROSTOR (prostor_id, naziv, tip, kapacitet, lokacija, radno_vreme) VALUES
+(1, 'Glavna teretana', 'teretana', 40, 'Prizemlje, sala 1', '07-22h');
+INSERT INTO PROSTOR (prostor_id, naziv, tip, kapacitet, lokacija, radno_vreme) VALUES
+(2, 'Bazen', 'bazen', 30, 'Suteren', '06-21h');
+INSERT INTO PROSTOR (prostor_id, naziv, tip, kapacitet, lokacija, radno_vreme) VALUES
+(3, 'Sala za grupne treninge', 'sala za grupne treninge', 25, 'Prvi sprat, sala 3', '08-20h');
+INSERT INTO PROSTOR (prostor_id, naziv, tip, kapacitet, lokacija, radno_vreme) VALUES
+(4, 'Ordinacija', 'ordinacija', 5, 'Prizemlje, soba 5', '09-17h');
+
+INSERT INTO OPREMA (oprema_id, naziv, tip, proizvodjac, datum_nabavke, status, lokacija, raspored_odrzavanja, prostor_id) VALUES
+(1, 'Sprava za cucnjeve', 'sprava za snagu', 'Technogym', DATE '2021-01-10', 'ispravna', 'Teretana, red 1', 'mesecno', 1);
+INSERT INTO OPREMA (oprema_id, naziv, tip, proizvodjac, datum_nabavke, status, lokacija, raspored_odrzavanja, prostor_id) VALUES
+(2, 'Traka za trcanje', 'kardio uredjaj', 'Life Fitness', DATE '2022-03-05', 'ispravna', 'Teretana, red 2', 'mesecno', 1);
+INSERT INTO OPREMA (oprema_id, naziv, tip, proizvodjac, datum_nabavke, status, lokacija, raspored_odrzavanja, prostor_id) VALUES
+(3, 'Strunjace', 'rekviziti', 'Reebok', DATE '2023-06-15', 'ispravna', 'Sala za grupne treninge', 'godisnje', 3);
+INSERT INTO OPREMA (oprema_id, naziv, tip, proizvodjac, datum_nabavke, status, lokacija, raspored_odrzavanja, prostor_id) VALUES
+(4, 'EKG aparat', 'medicinska oprema', 'Philips', DATE '2019-09-01', 'ispravna', 'Ordinacija', 'kvartalno', 4);
+
+INSERT INTO ODRZAVANJE (odrzavanje_id, oprema_id, datum, serviser, opis_intervencije, status_nakon_servisa) VALUES
+(1, 1, DATE '2024-01-10', 'Petar Serviser', 'Redovno podmazivanje', 'ispravno');
+INSERT INTO ODRZAVANJE (odrzavanje_id, oprema_id, datum, serviser, opis_intervencije, status_nakon_servisa) VALUES
+(2, 2, DATE '2024-02-15', 'Marko Tehnicar', 'Zamena trake', 'ispravno');
+
+
+INSERT INTO CLANARINA (clanarina_id, naziv, tip, cena, period_vazenja, broj_termina, ogranicenja) VALUES
+(1, 'Mesecna clanarina', 'mesecna', 3000, 30, NULL, NULL);
+INSERT INTO CLANARINA (clanarina_id, naziv, tip, cena, period_vazenja, broj_termina, ogranicenja) VALUES
+(2, 'Godisnja clanarina', 'godisnja', 28000, 365, NULL, NULL);
+INSERT INTO CLANARINA (clanarina_id, naziv, tip, cena, period_vazenja, broj_termina, ogranicenja) VALUES
+(3, 'Studentska clanarina', 'studentska', 2000, 30, NULL, 'Vazi uz overen indeks');
+INSERT INTO CLANARINA (clanarina_id, naziv, tip, cena, period_vazenja, broj_termina, ogranicenja) VALUES
+(4, 'Premium clanarina', 'premium', 5000, 30, NULL, 'Ukljucuje sve grupne programe');
+
+INSERT INTO PROGRAM (program_id, naziv, tip, cilj, trajanje, preporuceni_profil, ogranicenja) VALUES
+(1, 'Individualni trening snage', 'individualni', 'Povecanje misicne mase', '3 meseca', 'Rekreativci i sportisti', NULL);
+INSERT INTO PROGRAM (program_id, naziv, tip, cilj, trajanje, preporuceni_profil, ogranicenja) VALUES
+(2, 'Grupni fitnes program', 'grupni', 'Poboljsanje kondicije', 'Kontinuirano', 'Svi korisnici', NULL);
+INSERT INTO PROGRAM (program_id, naziv, tip, cilj, trajanje, preporuceni_profil, ogranicenja) VALUES
+(3, 'Rehabilitacioni program', 'rehabilitacioni', 'Oporavak nakon povrede', '2 meseca', 'Rehabilitacioni korisnici', 'Uz preporuku lekara');
+
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(1, 1, DATE '2024-01-01', DATE '2024-01-31');
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(2, 2, DATE '2023-06-01', DATE '2024-05-31');
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(3, 1, DATE '2024-03-01', DATE '2024-03-31');
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(4, 3, DATE '2024-02-20', DATE '2024-03-19');
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(5, 1, DATE '2024-05-01', DATE '2024-05-31');
+INSERT INTO KORISNIK_CLANARINA (korisnik_id, clanarina_id, datum_pocetka, datum_isteka) VALUES
+(6, 4, DATE '2023-03-11', DATE '2023-04-10');
+
+INSERT INTO KORISNIK_PROGRAM (korisnik_id, program_id, datum_upisa) VALUES (2, 1, DATE '2023-06-05');
+INSERT INTO KORISNIK_PROGRAM (korisnik_id, program_id, datum_upisa) VALUES (3, 3, DATE '2023-09-20');
+INSERT INTO KORISNIK_PROGRAM (korisnik_id, program_id, datum_upisa) VALUES (4, 2, DATE '2024-02-25');
+
+INSERT INTO OSOBLJE_PROGRAM (osoblje_id, program_id) VALUES (1, 1);
+INSERT INTO OSOBLJE_PROGRAM (osoblje_id, program_id) VALUES (4, 3);
+INSERT INTO OSOBLJE_PROGRAM (osoblje_id, program_id) VALUES (2, 2);
+
+
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(1, 'Individualni trening snage - Petar', 'individualni', TIMESTAMP '2024-06-10 09:00:00', 'zakazan', 1);
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(2, 'Grupni fitnes', 'grupni', TIMESTAMP '2024-06-10 18:00:00', 'zakazan', 2);
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(3, 'Online yoga sesija', 'individualni', TIMESTAMP '2024-06-11 07:00:00', 'zakazan', NULL);
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(4, 'Rehabilitacioni trening - Marko', 'individualni', TIMESTAMP '2024-06-11 10:00:00', 'zakazan', 3);
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(5, 'Online grupni HIIT', 'grupni', TIMESTAMP '2024-06-12 19:00:00', 'zakazan', NULL);
+INSERT INTO TRENING (trening_id, naziv, tip, datum_vreme, status, program_id) VALUES
+(6, 'Trening plivanja - Jovana', 'individualni', TIMESTAMP '2024-06-12 08:00:00', 'zakazan', NULL);
+
+INSERT INTO INDIVIDUALNI_TRENING (trening_id, korisnik_id, ciljevi_treninga) VALUES
+(1, 1, 'Povecanje snage nogu');
+INSERT INTO INDIVIDUALNI_TRENING (trening_id, korisnik_id, ciljevi_treninga) VALUES
+(3, 2, 'Opustanje i fleksibilnost');
+INSERT INTO INDIVIDUALNI_TRENING (trening_id, korisnik_id, ciljevi_treninga) VALUES
+(4, 3, 'Rehabilitacija kolena');
+INSERT INTO INDIVIDUALNI_TRENING (trening_id, korisnik_id, ciljevi_treninga) VALUES
+(6, 4, 'Unapredjenje tehnike plivanja');
+
+INSERT INTO GRUPNI_TRENING (trening_id, maks_ucesnika) VALUES (2, 15);
+INSERT INTO GRUPNI_TRENING (trening_id, maks_ucesnika) VALUES (5, 20);
+
+INSERT INTO GRUPNI_TRENING_UCESNICI (trening_id, korisnik_id) VALUES (2, 1);
+INSERT INTO GRUPNI_TRENING_UCESNICI (trening_id, korisnik_id) VALUES (2, 4);
+INSERT INTO GRUPNI_TRENING_UCESNICI (trening_id, korisnik_id) VALUES (2, 6);
+INSERT INTO GRUPNI_TRENING_UCESNICI (trening_id, korisnik_id) VALUES (5, 2);
+INSERT INTO GRUPNI_TRENING_UCESNICI (trening_id, korisnik_id) VALUES (5, 4);
+
+INSERT INTO GRUPNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (2, 2);
+INSERT INTO GRUPNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (5, 8);
+
+INSERT INTO INDIVIDUALNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (1, 1);
+INSERT INTO INDIVIDUALNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (3, 2);
+INSERT INTO INDIVIDUALNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (4, 4);
+INSERT INTO INDIVIDUALNI_TRENING_OSOBLJE (trening_id, osoblje_id) VALUES (6, 9);
+
+INSERT INTO TRADICIONALNI_TRENING (trening_id, prostor_id) VALUES (1, 1);
+INSERT INTO TRADICIONALNI_TRENING (trening_id, prostor_id) VALUES (2, 3);
+INSERT INTO TRADICIONALNI_TRENING (trening_id, prostor_id) VALUES (4, 4);
+INSERT INTO TRADICIONALNI_TRENING (trening_id, prostor_id) VALUES (6, 2);
+
+INSERT INTO ONLINE_TRENING_SESIJA (trening_id, platforma, uzivo, pristupni_podaci, broj_pregleda) VALUES
+(3, 'Zoom', 1, 'link: zoom.us/j/123456', 0);
+INSERT INTO ONLINE_TRENING_SESIJA (trening_id, platforma, uzivo, pristupni_podaci, broj_pregleda) VALUES
+(5, 'Zoom', 1, 'link: zoom.us/j/654321', 0);
+
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(1, 1, 1, 'da', 'ne', 'ne', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(2, 2, 1, 'da', 'ne', 'ne', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(3, 2, 4, 'da', 'ne', 'da', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(4, 2, 6, 'ne', 'da', 'ne', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(5, 3, 2, 'da', 'ne', 'ne', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(6, 4, 3, 'da', 'ne', 'ne', NULL);
+INSERT INTO EVIDENCIJA (evidencija_id, trening_id, korisnik_id, prisustvo, otkazivanje, kasnjenje, povrede_incidenti) VALUES
+(7, 6, 4, 'da', 'ne', 'ne', NULL);
+
+
+INSERT INTO PLAN_TRENINGA (plan_id, korisnik_id, osoblje_id, naziv, datum_kreiranja) VALUES
+(1, 1, 1, 'Plan za mrsavljenje - Petar', DATE '2024-01-15');
+INSERT INTO PLAN_TRENINGA (plan_id, korisnik_id, osoblje_id, naziv, datum_kreiranja) VALUES
+(2, 4, 2, 'Plan za kondiciju - Jovana', DATE '2024-03-01');
+
+INSERT INTO FAZA_PLANA (faza_id, plan_id, naziv, redosled, opis) VALUES
+(1, 1, 'Faza 1 - Adaptacija', 1, 'Uvod u trening, nizak intenzitet');
+INSERT INTO FAZA_PLANA (faza_id, plan_id, naziv, redosled, opis) VALUES
+(2, 1, 'Faza 2 - Jacanje', 2, 'Povecanje opterecenja');
+INSERT INTO FAZA_PLANA (faza_id, plan_id, naziv, redosled, opis) VALUES
+(3, 2, 'Faza 1 - Osnovna kondicija', 1, 'Kardio i osnovna snaga');
+
+INSERT INTO NEDELJA_PLANA (nedelja_id, faza_id, broj_nedelje, opis) VALUES
+(1, 1, 1, 'Prva nedelja adaptacije');
+INSERT INTO NEDELJA_PLANA (nedelja_id, faza_id, broj_nedelje, opis) VALUES
+(2, 1, 2, 'Druga nedelja adaptacije');
+INSERT INTO NEDELJA_PLANA (nedelja_id, faza_id, broj_nedelje, opis) VALUES
+(3, 2, 1, 'Prva nedelja jacanja');
+INSERT INTO NEDELJA_PLANA (nedelja_id, faza_id, broj_nedelje, opis) VALUES
+(4, 3, 1, 'Prva nedelja kondicije');
+
+INSERT INTO VEZBA (vezba_id, nedelja_id, naziv, tip, ciljna_misicna_grupa, broj_serija, broj_ponavljanja, trajanje, intenzitet, redosled) VALUES
+(1, 1, 'Cucnjevi sa telesnom tezinom', 'snaga', 'noge', 3, 12, '15 min', 'nizak', 1);
+INSERT INTO VEZBA (vezba_id, nedelja_id, naziv, tip, ciljna_misicna_grupa, broj_serija, broj_ponavljanja, trajanje, intenzitet, redosled) VALUES
+(2, 1, 'Plank', 'izdrzljivost', 'core', 3, NULL, '10 min', 'nizak', 2);
+INSERT INTO VEZBA (vezba_id, nedelja_id, naziv, tip, ciljna_misicna_grupa, broj_serija, broj_ponavljanja, trajanje, intenzitet, redosled) VALUES
+(3, 3, 'Cucnjevi sa sipkom', 'snaga', 'noge', 4, 10, '20 min', 'srednji', 1);
+INSERT INTO VEZBA (vezba_id, nedelja_id, naziv, tip, ciljna_misicna_grupa, broj_serija, broj_ponavljanja, trajanje, intenzitet, redosled) VALUES
+(4, 4, 'Trcanje na traci', 'kardio', 'celo telo', 1, NULL, '30 min', 'srednji', 1);
+
+
+INSERT INTO PLAN_ISHRANE (plan_ishrane_id, korisnik_id, osoblje_id, naziv, datum_kreiranja) VALUES
+(1, 1, 3, 'Plan ishrane za mrsavljenje', DATE '2024-01-16');
+INSERT INTO PLAN_ISHRANE (plan_ishrane_id, korisnik_id, osoblje_id, naziv, datum_kreiranja) VALUES
+(2, 3, 3, 'Plan ishrane za oporavak', DATE '2023-09-21');
+
+INSERT INTO OBROK (obrok_id, plan_ishrane_id, naziv, kalorije, proteini, ugljeni_hidrati, masti, preporuceni_termin) VALUES
+(1, 1, 'Dorucak', 350, 20, 40, 10, '07:00-08:00');
+INSERT INTO OBROK (obrok_id, plan_ishrane_id, naziv, kalorije, proteini, ugljeni_hidrati, masti, preporuceni_termin) VALUES
+(2, 1, 'Rucak', 550, 35, 60, 15, '12:00-13:00');
+INSERT INTO OBROK (obrok_id, plan_ishrane_id, naziv, kalorije, proteini, ugljeni_hidrati, masti, preporuceni_termin) VALUES
+(3, 1, 'Vecera', 400, 30, 30, 12, '19:00-20:00');
+INSERT INTO OBROK (obrok_id, plan_ishrane_id, naziv, kalorije, proteini, ugljeni_hidrati, masti, preporuceni_termin) VALUES
+(4, 2, 'Dorucak', 450, 25, 50, 15, '08:00-09:00');
+
+INSERT INTO PLAN_ISHRANE_OGRANICENJA (plan_ishrane_id, ogranicenje) VALUES (1, 'bez glutena');
+INSERT INTO PLAN_ISHRANE_OGRANICENJA (plan_ishrane_id, ogranicenje) VALUES (2, 'bez orasastih plodova');
+
+
+INSERT INTO MERENJE (merenje_id, korisnik_id, osoblje_id, datum, tip_merenja, numericka_vrednost, jedinica_mere, tekstualni_rezultat, napomena) VALUES
+(1, 1, 1, TIMESTAMP '2024-01-15 09:00:00', 'telesna masa', 82, 'kg', NULL, 'Pocetno merenje');
+INSERT INTO MERENJE (merenje_id, korisnik_id, osoblje_id, datum, tip_merenja, numericka_vrednost, jedinica_mere, tekstualni_rezultat, napomena) VALUES
+(2, 1, 1, TIMESTAMP '2024-03-15 09:00:00', 'telesna masa', 78, 'kg', NULL, 'Napredak nakon 2 meseca');
+INSERT INTO MERENJE (merenje_id, korisnik_id, osoblje_id, datum, tip_merenja, numericka_vrednost, jedinica_mere, tekstualni_rezultat, napomena) VALUES
+(3, 2, 4, TIMESTAMP '2023-06-05 10:00:00', 'procenat masti', 18, '%', NULL, NULL);
+INSERT INTO MERENJE (merenje_id, korisnik_id, osoblje_id, datum, tip_merenja, numericka_vrednost, jedinica_mere, tekstualni_rezultat, napomena) VALUES
+(4, 3, 4, TIMESTAMP '2023-09-20 11:00:00', 'rehabilitacioni status', NULL, NULL, 'Poboljsanje pokretljivosti kolena', 'Nakon prve faze terapije');
+
+
+INSERT INTO EVALUACIJA (evaluacija_id, korisnik_id, osoblje_id, datum, opis, preporuka) VALUES
+(1, 1, 1, TIMESTAMP '2024-03-15 09:30:00',
+ 'Korisnik je izgubio 4 kg u odnosu na pocetno merenje, snaga u nogama je poboljsana.',
+ 'Nastaviti sa trenutnim planom treninga, povecati unos proteina u ishrani.');
+INSERT INTO EVALUACIJA (evaluacija_id, korisnik_id, osoblje_id, datum, opis, preporuka) VALUES
+(2, 3, 4, TIMESTAMP '2023-09-20 11:30:00',
+ 'Pokretljivost kolena znacajno poboljsana nakon prve faze rehabilitacije.',
+ 'Preci na drugu fazu rehabilitacije uz postepeno povecanje opterecenja.');
+
+
+ALTER TABLE KORISNIK MODIFY korisnik_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE STARATELJ MODIFY staratelj_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE OSOBLJE MODIFY osoblje_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE PROSTOR MODIFY prostor_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE OPREMA MODIFY oprema_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE ODRZAVANJE MODIFY odrzavanje_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE CLANARINA MODIFY clanarina_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE PROGRAM MODIFY program_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE TRENING MODIFY trening_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE EVIDENCIJA MODIFY evidencija_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE PLAN_TRENINGA MODIFY plan_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE FAZA_PLANA MODIFY faza_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE NEDELJA_PLANA MODIFY nedelja_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE VEZBA MODIFY vezba_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE PLAN_ISHRANE MODIFY plan_ishrane_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE OBROK MODIFY obrok_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE MERENJE MODIFY merenje_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+ALTER TABLE EVALUACIJA MODIFY evaluacija_id GENERATED BY DEFAULT AS IDENTITY (START WITH LIMIT VALUE);
+
+COMMIT;
