@@ -48,7 +48,3 @@ Centar vodi evidenciju o napretku korisnika. Za svaku kontrolu ili merenje se pa
 osoba koja je merenje izvršila i rezultati. Merenja mogu uključivati telesnu masu, procenat masti, obime
 tela, testove snage, testove izdržljivosti, fleksibilnost, rehabilitacioni status i druge pokazatelje. Na osnovu
 toga se formiraju evaluacije i preporuke.
-
-Elektronski fakultet Univerziteta u Nišu
-smer: računarstvo i informatika
-semestar: 6
