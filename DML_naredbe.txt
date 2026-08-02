@@ -34,7 +34,7 @@ INSERT INTO KORISNIK_CILJEVI (korisnik_id, cilj) VALUES (6, 'mrsavljenje');
 INSERT INTO KORISNIK_ALERGIJE (korisnik_id, alergija) VALUES (3, 'polen');
 INSERT INTO KORISNIK_ALERGIJE (korisnik_id, alergija) VALUES (5, 'kikiriki');
 
-INSERT INTO KORISNIK_ZDRAVSTVENA_OGRANICENJA (korisnik_id, ogranicenje) VALUES (3, 'povreda kolena');
+INSERT INTO KORISNIK_ZDRAV_OGRANICENJA (korisnik_id, ogranicenje) VALUES (3, 'povreda kolena');
 
 INSERT INTO STARATELJ (staratelj_id, korisnik_id, ime, prezime, kontakt_telefon, email) VALUES
 (1, 5, 'Dragan', 'Nikolic', '0691234567', 'dragan.nikolic@email.com');
